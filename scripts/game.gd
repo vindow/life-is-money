@@ -41,11 +41,17 @@ func _process(delta):
 	if (get_node("level").get_child_count() == 0):
 		if ((current_level + 1) % 5 == 0):
 			get_node("level").hide()
+			update_shop()
 			get_node("shop").show()
 			get_tree().set_pause(true)
 		current_level += 1
+		get_node("wave_popup").set_text("Wave " + str(current_level + 1))
+		if (current_level >= 10):
+			get_node("wave_popup").set("custom_colors/font_color", Color(0, 0, 0))
+			get_node("HP").set("custom_colors/font_color", Color(0, 0, 0))
 		if (current_level > levels.size()):
 			victory()
+		get_node("anim").play("wave_notify")
 		VisualServer.set_default_clear_color(Color((current_level + 1) / 25.0, (current_level+1) / 25.0, (current_level+1) / 25.0,1.0))
 		get_node("level").add_child(levels[current_level].instance())
 	update()

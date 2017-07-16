@@ -1,0 +1,133 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://scenes/basic_enemy.tscn" type="PackedScene" id=2]
+
+[node name="enemies" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="basic_enemy" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 141.664, 143.128 )
+
+[node name="basic_enemy 2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 718.178, 180.891 )
+
+[node name="basic_enemy 3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1382.81, 279.075 )
+
+[node name="basic_enemy 4" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 461.39, 304.25 )
+
+[node name="basic_enemy 5" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 557.056, 775.028 )
+
+[node name="basic_enemy 6" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 327.961, 591.248 )
+has_powerup = true
+
+[node name="basic_enemy 7" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 239.848, 880.764 )
+
+[node name="basic_enemy 8" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 864.195, 377.258 )
+
+[node name="basic_enemy 9" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1010.21, 666.774 )
+
+[node name="basic_enemy 10" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1095.81, 185.926 )
+
+[node name="basic_enemy 11" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1302.24, 538.38 )
+
+[node name="basic_enemy 12" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 906.993, 827.896 )
+
+[node name="basic_enemy 13" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 650.205, 578.661 )
+
+[node name="basic_enemy 14" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1196.51, 850.554 )
+
+[node name="basic_enemy 15" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1445.74, 397.399 )
+has_powerup = true
+
+[node name="basic_enemy 16" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1579.17, 840.484 )
+
+[node name="basic_enemy 17" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1697.5, 432.644 )
+
+[node name="basic_enemy 18" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1687.43, 150.681 )
+
+[node name="basic_enemy 19" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1700.01, 588.731 )
+
+[node name="basic_enemy 20" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1395.39, 971.395 )
+
+[node name="basic_enemy 21" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 136.629, 367.188 )
+
+[node name="basic_enemy 22" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 426.145, 120.471 )
+
+[node name="basic_enemy 23" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 559.574, 981.465 )
+
+[node name="basic_enemy 24" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 431.18, 764.958 )
+
+[node name="basic_enemy 25" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 690.485, 440.197 )
+
+[node name="basic_enemy 26" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1229.24, 372.223 )
+
+[node name="basic_enemy 27" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1536.37, 140.611 )
+
+[node name="basic_enemy 28" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1493.58, 654.187 )
+has_powerup = true
+
+[node name="basic_enemy 29" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 126.559, 686.914 )
+
+[node name="basic_enemy 30" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1755.4, 961.325 )
+
+

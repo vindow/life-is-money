@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://scenes/splitting_enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/basic_enemy.tscn" type="PackedScene" id=3]
+
+[node name="enemies" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="splitting_enemy" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 359.372, 880.314 )
+
+[node name="splitting_enemy 2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 422.939, 341.02 )
+
+[node name="splitting_enemy 3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1323.13, 238.493 )
+
+[node name="splitting_enemy 4" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 853.554, 728.573 )
+
+[node name="splitting_enemy 5" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 913.019, 226.19 )
+
+[node name="splitting_enemy 6" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1470.77, 890.567 )
+
+[node name="basic_enemy" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 710.015, 523.519 )
+
+[node name="basic_enemy 2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 324.513, 92.9042 )
+
+[node name="basic_enemy 3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 221.985, 515.317 )
+
+[node name="basic_enemy 4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 701.813, 900.819 )
+has_powerup = true
+
+[node name="basic_enemy 5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1630.71, 548.125 )
+
+[node name="basic_enemy 6" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1169.34, 115.46 )
+
+[node name="basic_enemy 7" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1234.96, 537.873 )
+
+[node name="basic_enemy 8" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1038.1, 888.516 )
+
+[node name="basic_enemy 9" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1614.31, 207.735 )
+
+[node name="splitting_enemy 7" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1470.77, 445.598 )
+
+[node name="splitting_enemy 8" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 611.589, 224.139 )
+
+[node name="splitting_enemy 9" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 408.585, 619.895 )
+
+

@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/level.gd" type="Script" id=1]
+[ext_resource path="res://scenes/basic_enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/splitting_enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/tracking_enemy.tscn" type="PackedScene" id=4]
+
+[node name="enemies" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="basic_enemy" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 189.176, 179.027 )
+
+[node name="basic_enemy 2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 1189.84, 261.049 )
+
+[node name="basic_enemy 3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 468.05, 837.252 )
+
+[node name="splitting_enemy" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 291.703, 591.187 )
+
+[node name="splitting_enemy 2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 623.892, 228.24 )
+
+[node name="splitting_enemy 3" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1597.9, 328.717 )
+
+[node name="splitting_enemy 4" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1474.87, 751.129 )
+
+[node name="splitting_enemy 5" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 906.867, 671.158 )
+
+[node name="tracking_enemy" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 937.625, 258.998 )
+
+[node name="tracking_enemy 2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1107.82, 927.476 )
+has_powerup = true
+
+[node name="tracking_enemy 3" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 562.375, 562.479 )
+
+[node name="tracking_enemy 4" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 201.479, 927.476 )
+
+

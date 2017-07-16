@@ -35,13 +35,11 @@ func set_powerup_type(type):
 
 func _on_powerup_area_enter( area ):
 	if (area extends preload("res://scripts/player.gd") and !is_picked_up):
-		print("PICKED UP")
 		if (powerup_type == HEALTH):
-			print("SET HEALTH")
 			if (area.max_health < 250):
 				area.max_health += 10
 		elif (powerup_type == DAMAGE):
-			area.damage += 1
+			area.damage += 2
 		elif (powerup_type == FIRE_RATE):
 			if (area.rps < 15):
 				area.set_fire_rate(area.rps + 1)

@@ -41,6 +41,8 @@ func _fixed_process(delta):
 
 func lower_health(amount):
 	health -= amount
+	get_node("sound").play("enemy_hit")
+	get_node("hit_particles").set_emitting(true)
 	if (health <= 0):
 		die()
 		
@@ -57,15 +59,8 @@ func die():
 		get_parent().add_child(pinstance)
 
 func _on_basic_enemy_area_enter( area ):
-	if (can_interact):
-		if (area extends preload("res://scripts/bullet.gd")):
-			get_node("sound").play("enemy_hit")
-			get_node("hit_particles").set_emitting(true)
-			lower_health(area.damage)
-			player.change_health(area.damage)
-			area.queue_free()
-		elif (area extends preload("res://scripts/player.gd") and !area.dying):
-			area.hit_player(25)
+	if (can_interact and area extends preload("res://scripts/player.gd") and !area.dying):
+		area.hit_player(25)
 
 func _on_spawn_timer_timeout():
 	can_interact = true

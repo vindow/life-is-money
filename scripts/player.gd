@@ -1,6 +1,6 @@
 extends Area2D
 
-export var max_health = 100
+var max_health = 100
 var health = 100
 var velocity = 500
 var move_direction = Vector2(0, 0)
@@ -10,14 +10,14 @@ var shoot_direction = Vector2(1, 0)
 var shot_timer = 0.5
 var rps = 5
 var shot_cooldown = 0.2
-export var damage = 7
+var damage = 6
 
 var cant_shoot_timer = 1.0
 var cant_shoot_cooldown = 1.0
 
 var regen_amount = 10
 var regen_timer = 3.0
-export var regen_cooldown = 3.0
+var regen_cooldown = 3.0
 
 var invulnerable = false
 
@@ -110,6 +110,7 @@ func change_health(amount):
 		die()
 
 func set_fire_rate(rounds_per_sec):
+	rps = rounds_per_sec
 	shot_cooldown = 1.0 / rounds_per_sec
 
 func hit_player(amount):

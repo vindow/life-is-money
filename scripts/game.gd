@@ -2,7 +2,6 @@ extends Node2D
 
 var player_max_health
 var player_health
-var enemies
 
 var levels = []
 var current_level = 0
@@ -15,7 +14,6 @@ func _ready():
 	get_node("level").add_child(levels[0].instance())
 	player_max_health = get_node("player").max_health
 	player_health = get_node("player").health
-	enemies = get_node("enemies")
 	set_process(true)
 	
 func _draw():
@@ -118,7 +116,7 @@ func _on_damage_up_pressed():
 	get_node("sound").play("Blip_Select")
 	get_node("player").max_health -= 10
 	get_node("player").health = get_node("player").max_health
-	get_node("player").damage += 1
+	get_node("player").damage += 2
 	check_button_status()
 	update_shop()
 	
@@ -127,7 +125,7 @@ func _on_damage_down_pressed():
 	get_node("sound").play("Blip_Select")
 	get_node("player").max_health += 7
 	get_node("player").health = get_node("player").max_health
-	get_node("player").damage -= 1
+	get_node("player").damage -= 2
 	check_button_status()
 	update_shop()
 
@@ -136,8 +134,7 @@ func _on_fire_rate_up_pressed():
 	get_node("sound").play("Blip_Select")
 	get_node("player").max_health -= 10
 	get_node("player").health = get_node("player").max_health
-	get_node("player").rps += 1
-	get_node("player").set_fire_rate(get_node("player").rps)
+	get_node("player").set_fire_rate(get_node("player").rps + 1)
 	check_button_status()
 	update_shop()
 
@@ -146,8 +143,7 @@ func _on_fire_rate_down_pressed():
 	get_node("sound").play("Blip_Select")
 	get_node("player").max_health += 7
 	get_node("player").health = get_node("player").max_health
-	get_node("player").rps -= 1
-	get_node("player").set_fire_rate(get_node("player").rps)
+	get_node("player").set_fire_rate(get_node("player").rps - 2)
 	check_button_status()
 	update_shop()
 
